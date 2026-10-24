@@ -37,6 +37,10 @@ The front surface of the note block contains holes so that the speaker can out p
 2) Note block PCB: 5.75 x 4 cm
 3) Piezoelectric sensor: 3.5cm diameter
 
+## Files:
+- `CAD` folder contains .f3d (fusion) file & .stl for printing.
+- `PCB` folder contains kicad files, `export.zip` has gerber files, `3d_model` has .step file of PCB.
+
 ## How to assemble / Details about the 3d printed parts (!!WIP!!)
 ![Parts laid out](/images/lay_both.png)
 
