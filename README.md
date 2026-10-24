@@ -37,4 +37,23 @@ The front surface of the note block contains holes so that the speaker can out p
 2) Note block PCB: 5.75 x 4 cm
 3) Piezoelectric sensor: 3.5cm diameter
 
+## How to assemble / Details about the 3d printed parts (!!WIP!!)
+![Parts laid out](/images/lay_both.png)
 
+There are two types of block: Note block and Instrument block. Note block contains the electronics while the instrument block only contains a single rfid tag + 4 magnets on its top surface.
+
+There are 6 parts per block. Final assembly should measure 10x10x10cm.
+
+The faces are different sizes as all need to fit together to form the 10x10x10cm. It is pretty easy to assemble as same dimension face are opposites of each other. 
+
+Each face has a rectangular hole on its bottom surface and a rectangle sticking out on its top surface. 
+The hole attaches to the `base plate`, while the rectangle goes in the `top plate`
+
+![desc](/images/explain_connect.png)
+
+Screws aren't really needed other than mounting the pcb, that too is optional as I've made standoffs on the base plate. 
+
+## PCB schematic / render
+![PCB schematic](/images/pcb_schem.png)
+
+![PCB render](/images/pcb_model.png)
