@@ -54,6 +54,6 @@ The hole attaches to the `base plate`, while the rectangle goes in the `top plat
 Screws aren't really needed other than mounting the pcb, that too is optional as I've made standoffs on the base plate. 
 
 ## PCB schematic / render
-![PCB schematic](/images/pcb_schematic.png)
+![PCB schematic](/images/pcb_schem.png)
 
 ![PCB render](/images/pcb_model.png)
