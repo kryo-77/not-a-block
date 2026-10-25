@@ -27,7 +27,7 @@ The tag gets read every few seconds so that if the block changes, its sound chan
 
 ![Note block pcb mount](/images/nb_bottom2.png)
 
-The front surface of the note block contains holes so that the speaker can out put sound. I decided to only make holes in the black layer as it is thinner than the white one and would not show that many holes as well. 
+The front surface of the note block contains holes so that the speaker can output sound. I decided to only make holes in the black layer as it is thinner than the white one and would not show that many holes as well. 
 
 ![Note block speaker grill](/images/nb_f%2Bb.png)
 
@@ -40,11 +40,12 @@ The front surface of the note block contains holes so that the speaker can out p
 ## Files:
 - `CAD` folder contains .f3d (fusion) file & .stl for printing.
 - `PCB` folder contains kicad files, `export.zip` has gerber files, `3d_model` has .step file of PCB.
+- `CODE` folder contains basic test code (when RFID card gets detected, a beep is produced) which uses a XIAO s3, MFRC522 RFID reader and no piezo sensor. I only had these components with me so code are based on it instead of the BOM.
 
 ## How to assemble / Details about the 3d printed parts (!!WIP!!)
 ![Parts laid out](/images/lay_both.png)
 
-There are two types of block: Note block and Instrument block. Note block contains the electronics while the instrument block only contains a single rfid tag + 4 magnets on its top surface.
+There are two types of block: Note block and Instrument block. Note block contains the electronics while the instrument block only contains a single RFID tag + 4 magnets on its top surface.
 
 There are 6 parts per block. Final assembly should measure 10x10x10cm.
 
@@ -52,6 +53,8 @@ The faces are different sizes as all need to fit together to form the 10x10x10cm
 
 Each face has a rectangular hole on its bottom surface and a rectangle sticking out on its top surface. 
 The hole attaches to the `base plate`, while the rectangle goes in the `top plate`
+
+Thats it for the assembly, just pushing the faces on to the base, no need for screws. Though the design might get changed depending on it actually works irl as I cant test the prints myself.
 
 ![desc](/images/explain_connect.png)
 
@@ -61,3 +64,17 @@ Screws aren't really needed other than mounting the pcb, that too is optional as
 ![PCB schematic](/images/pcb_schem.png)
 
 ![PCB render](/images/pcb_model.png)
+
+
+## BOM
+| No | Component | Qty | Unit Price (USD) | Uses | Link |
+|----|-----------|-----|------------------|------|------|
+| 1 | ESP32-C3 SuperMini | 1 | 2.72 | MCU | https://makerbazar.in/products/esp32-c3-supermini-iot-development-board |
+| 2 | PN532 RFID/NFC V3 module | 1 | 2.83 | RFID reader | https://robocraze.com/products/nfc-near-field-communication-rf-id-v3-module |
+| 3 | MAX98357A I2S amplifier | 1 | 2.04 | Sound amplifier | https://robu.in/product/smartelex-i2s-audio-breakout-max98357a/ |
+| 4 | Speaker, 4 ohm 3W | 1 | 1.05 | Sound output | Local shop |
+| 5 | 35mm piezo sensor | 2 | 0.23 | Hit and pitch sensing | https://robocraze.com/products/35mm-piezo-sensor |
+| 6 | BZX55C3V3 zener diode | 2 | 0.02 | Piezo protection | https://robu.in/product/bzx55c3v3-1-2w-zener-diode-pack-of-40/ |
+| 7 | 4.7k resistor | 2 | n/a | Piezo protection | |
+| 8 | 470uF polarised capacitor | 1 | n/a | Power smoothing | |
+| 9 | 1N5819 Schottky diode | 1 | 0.06 | Power protection (USB and battery connected together) | https://robu.in/product/1n5819-ap-mcc-40v-1a-600mv1a-do-41-schottky-diodes-rohs/ |
