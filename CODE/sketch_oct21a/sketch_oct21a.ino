@@ -1,5 +1,6 @@
 // tested code works with simple beep sound when rfid card is detected
 // adding piezo hits later
+// Uses XIAO s3, will update it to c3 once it arrives.
 #include <SPI.h>
 #include <MFRC522.h>
 #include <ESP_I2S.h>
