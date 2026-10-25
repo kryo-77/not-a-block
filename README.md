@@ -61,3 +61,17 @@ Screws aren't really needed other than mounting the pcb, that too is optional as
 ![PCB schematic](/images/pcb_schem.png)
 
 ![PCB render](/images/pcb_model.png)
+
+
+## BOM
+| No | Component | Qty | Unit Price (USD) | Uses | Link |
+|----|-----------|-----|------------------|------|------|
+| 1 | ESP32-C3 SuperMini | 1 | 2.72 | MCU | https://makerbazar.in/products/esp32-c3-supermini-iot-development-board |
+| 2 | PN532 RFID/NFC V3 module | 1 | 2.83 | RFID reader | https://robocraze.com/products/nfc-near-field-communication-rf-id-v3-module |
+| 3 | MAX98357A I2S amplifier | 1 | 2.04 | Sound amplifier | https://robu.in/product/smartelex-i2s-audio-breakout-max98357a/ |
+| 4 | Speaker, 4 ohm 3W | 1 | 1.05 | Sound output | Local shop |
+| 5 | 35mm piezo sensor | 2 | 0.23 | Hit and pitch sensing | https://robocraze.com/products/35mm-piezo-sensor |
+| 6 | BZX55C3V3 zener diode | 2 | 0.02 | Piezo protection | https://robu.in/product/bzx55c3v3-1-2w-zener-diode-pack-of-40/ |
+| 7 | 4.7 resistor | 2 | n/a | Piezo protection | |
+| 8 | 470uF polarised capacitor | 1 | n/a | Power smoothing | |
+| 9 | 1N5819 Schottky diode | 1 | 0.06 | Power protection (USB and battery connected together) | https://robu.in/product/1n5819-ap-mcc-40v-1a-600mv1a-do-41-schottky-diodes-rohs/ |
