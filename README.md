@@ -39,7 +39,7 @@ The front surface of the note block contains holes so that the speaker can outpu
 
 ## Files:
 - `CAD` folder contains .f3d (fusion) file & .stl for printing.
-- `PCB` folder contains kicad files, `export.zip` has gerber files, `3d_model` has .step file of PCB.
+- `PCB` folder contains kicad files, `export.zip` has gerber files, `3d_model` has .step file of PCB. It has a `footprints_ext` folder which contains footprint for ESP32-C3-SuperMini which I downloaded online.
 - `CODE` folder contains basic test code (when RFID card gets detected, a beep is produced) which uses a XIAO s3, MFRC522 RFID reader and no piezo sensor. I only had these components with me so code are based on it instead of the BOM.
 
 ## How to assemble / Details about the 3d printed parts (!!WIP!!)
