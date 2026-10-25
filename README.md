@@ -78,3 +78,5 @@ Screws aren't really needed other than mounting the pcb, that too is optional as
 | 7 | 4.7k resistor | 2 | n/a | Piezo protection | |
 | 8 | 470uF polarised capacitor | 1 | n/a | Power smoothing | |
 | 9 | 1N5819 Schottky diode | 1 | 0.06 | Power protection (USB and battery connected together) | https://robu.in/product/1n5819-ap-mcc-40v-1a-600mv1a-do-41-schottky-diodes-rohs/ |
+| 10 |	3d print |	1 |	14.55 |	3d print | (printing legion channel - slack)	https://print.speedhawks.online/slice |
+| 11 |	PCB |	1 |	9.48 |	PCB manufacturing	| https://robu.in/product/online-pcb-manufacturing-service/ |
